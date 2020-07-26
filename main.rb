@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require_relative 'board.rb'
 require_relative 'knight.rb'
 
@@ -25,6 +26,3 @@ demo
 # playboard = Board.new
 # playboard.knight_moves([0,0],[7,5])
 # playboard.show
-
-
-
