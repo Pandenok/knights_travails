@@ -10,7 +10,7 @@ class Knight
     @children = []
   end
 
-  def where_can_jump_from #all_knight_moves
+  def where_can_jump
     children = 
       MOVES.map { |row, col| [row + x, col + y] }
            .select { |row, col| row.between?(0, 7) && col.between?(0, 7) }
