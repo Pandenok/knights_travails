@@ -1,5 +1,5 @@
 # Project: Data Structures and Algorithms
-## Project 2: Knight’s Travails
+## Assignment 2: Knight’s Travails
 
 ### What's this
 
