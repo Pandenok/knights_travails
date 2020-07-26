@@ -1,12 +1,30 @@
 require_relative 'board.rb'
 require_relative 'knight.rb'
 
-playboard = Board.new
-playboard.knights_moves([3,3],[4,3])
+def demo
+  playboard = Board.new
+  playboard.show
 
-playboard.knights_moves([4,3],[3,3])
+  print "\nEnter the x coordinates for starting position (0 to 7): "
+  x_from = gets.chomp.to_i
+  print 'Enter the y coordinates for starting position (0 to 7): '
+  y_from = gets.chomp.to_i
+  print 'Enter the x coordinates for ending position (0 to 7): '
+  x_to = gets.chomp.to_i
+  print 'Enter the y coordinates for ending position (0 to 7): '
+  y_to = gets.chomp.to_i
 
-playboard.knights_moves([5,3],[1,2])
+  from = [x_from, y_from]
+  to = [x_to, y_to]
+
+  playboard.knight_moves(from, to)
+  playboard.show
+end
+
+demo
+# playboard = Board.new
+# playboard.knight_moves([0,0],[7,5])
+# playboard.show
 
 
 
